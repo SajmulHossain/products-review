@@ -11,7 +11,7 @@ const data = [
         {
             product: 'Fan',
             name: 'Sajmul',
-            rating: 5.00,
+            rating: 5,
             review: 'This is very good products',
             on: 1718289238293
         }
@@ -21,7 +21,7 @@ const data = [
         {
             product: 'Light',
             name: 'Hossain',
-            rating: 4.78,
+            rating: 3,
             review: 'What a nice product this is!',
             on: 17182723838823
         }
@@ -31,7 +31,7 @@ const data = [
         {
             product: 'Light',
             name: 'Hossain',
-            rating: 4.98,
+            rating: 5,
             review: 'What a nice product this is!',
             on: 17183892388932
         },
@@ -39,7 +39,7 @@ const data = [
         {
             product: 'Light',
             name: 'Hossain',
-            rating: 4.3,
+            rating: 4,
             review: 'What a nice product this is!',
             on: 171829397439
         }

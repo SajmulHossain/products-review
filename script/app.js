@@ -41,6 +41,11 @@ function review(data) {
 
 function srtRating(data) {
     const srtRatingBtn = document.getElementById('sortByRating');
+    const grouping = document.getElementById('grouping');
+
+    grouping.addEventListener('click', () => {
+        srtGrp(data);
+    })
 
     srtRatingBtn.addEventListener('click',() => {
         ratingSort(data);
@@ -65,6 +70,26 @@ function removeNode(parent) {
     while(parent.firstChild) {
         parent.removeChild(parent.firstChild);
     }
+}
+
+function srtGrp(data) {
+    const flatData = data.flat();
+    const group = Object.groupBy(flatData, ({product}) => product);
+
+    const title = Reflect.ownKeys(group);
+    const reviewData = document.querySelector('#review-data ul');
+    removeNode(reviewData);
+
+    title.forEach((title) => {
+        const li = document.createElement('li');
+        li.classList.add('li-style');
+
+        const h3 = document.createElement('h3');
+        h3.innerText = title;
+        
+        li.appendChild(h3);
+        reviewData.appendChild(li);
+    })
 }
 
 
