@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Review</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <nav class="padding">
+            <p>Products Review</p>
+        </nav>
+    </header>
+    <!-- header section end -->
+    
+    <!-- main section start -->
+     <main>
+        <section class="summery padding">
+            <div class="total-products card">
+                <h3>Total Products</h3>
+                <p  id="products">00</p>
+            </div>
+            <div class="total-review card">
+                <h3>Total Review</h3>
+                <p id="review">00</p>
+            </div>
+            <div class="avarage-review card">
+                <h3>Avarage Review</h3>
+                <p id="avarage">00</p>
+            </div>
+        </section>
+
+        <section class="review">
+            <h3>Review</h3>
+            <div class="review-btn">
+                <button>Sort by Date</button>
+                <button id="sortByRating">Sort by Rating</button>
+                <button id="grouping">GroupBy</button>
+            </div>
+            <div class="review-list" id="review-data">
+                <ul></ul>
+            </div>
+        </section>
+     </main>
+    <!-- main section end -->
+
+
+    <script type="module" src="script/app.js"></script>
+</body>
+</html>
